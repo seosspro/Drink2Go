@@ -1,0 +1,164 @@
+.cards {
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1011px;
+    margin: 0 0 0 auto;
+  }
+}
+
+.cards__sorting-wrapper {
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: min-content;
+    margin-left: auto;
+    margin-bottom: 26px;
+  }
+}
+
+.cards__sorting-label {
+  display: flex;
+  align-items: center;
+}
+
+.cards__sorting-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: @black;
+  margin-right: 8px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.cards__select {
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  color: @primary;
+  border: none;
+  padding: 4px 0 4px 7px;
+  background-color: inherit;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cards__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+}
+
+.cards__item {
+  padding: 40px 20px 20px;
+  margin-bottom: 20px;
+  background-color: @white;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:hover {
+    box-shadow: 0 5px 20px @grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    width: 350px;
+    padding: 50px 30px 30px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 317px;
+    margin: 0;
+  }
+}
+
+.cards__image {
+  display: block;
+  margin: 0 auto 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 31px;
+  }
+}
+
+.cards__title {
+  font-size: 18px;
+  line-height: 32px;
+  color: @black;
+  margin: 0 0 4px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 9px;
+  }
+}
+
+.cards__description {
+  font-size: 14px;
+  line-height: 20px;
+  color: @black;
+  margin: 0 0 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.cards__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards__price {
+  font-size: 20px;
+  line-height: 32px;
+  color: @black;
+  margin: 0;
+}
+
+.cards__button {
+  font-size: 14px;
+  line-height: 20px;
+  color: @white;
+  background: no-repeat 20px 10px url("../../img/cardbutton.png") @primary;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px 8px 46px;
+  cursor: pointer;
+}
+
+.cards__br-mob {
+  display: block;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}

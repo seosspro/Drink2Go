@@ -1,0 +1,84 @@
+.pagination {
+  @media (min-width: @tablet-width) {
+    width: min-content;
+    margin-left: auto;
+    margin-right: -20px;
+  }
+}
+
+.pagination__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination__item {
+  @media (min-width: @tablet-width) {
+    margin-right: 20px;
+  }
+}
+
+.pagination__button {
+  font-size: 16px;
+  line-height: 24px;
+  color: @primary;
+  min-width: 40px;
+  min-height: 40px;
+  border: none;
+  background-color: @white;
+  border-radius: 4px;
+  padding: 8px;
+
+  &--next {
+    box-sizing: border-box;
+    background: center center no-repeat url("../../img/arrow.svg") @white;
+    transform: rotate(-90deg);
+  }
+
+  &--back {
+    box-sizing: border-box;
+    background: center center no-repeat url("../../img/arrow.svg") @white;
+    transform: rotate(90deg);
+  }
+
+  &--сurrent {
+    color: @black;
+    background-color: transparent;
+  }
+
+  &:hover {
+    color: @white;
+  }
+
+  &:focus {
+    color: @white;
+  }
+
+  &:disabled {
+    color: @white;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--next {
+      background-image: none;
+      transform: none;
+      padding: 8px 20px;
+    }
+
+    &--back {
+      background-image: none;
+      transform: none;
+      padding: 8px 20px;
+    }
+  }
+}
+
+.pagination__button span {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}

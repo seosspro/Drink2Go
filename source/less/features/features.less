@@ -1,0 +1,166 @@
+.features {
+  padding: 50px 20px 28px;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 30px 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 100px 40px 70px;
+  }
+}
+
+.features__top {
+  text-align: center;
+  margin-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.features__badge {
+  font-size: 12px;
+  line-height: 16px;
+  color: @primary;
+  margin: 0 0 4px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.features__title {
+  font-size: 24px;
+  line-height: 36px;
+  color: @black;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
+}
+
+.features__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    justify-content: space-around;
+  }
+}
+
+.features__item {
+  position: relative;
+  padding: 66px 0 0 0;
+  text-align: center;
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    width: 339px;
+    text-align: start;
+    padding: 0 0 0 72px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 318px;
+    text-align: center;
+    padding: 76px 0 0 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 56px;
+    top: 0;
+    left: calc(50% - 26px);
+
+    @media (min-width: @tablet-width) {
+      left: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 0;
+      left: calc(50% - 26px);
+    }
+  }
+
+  &--speed::before {
+    background: no-repeat url("../../img/speed.png");
+  }
+
+  &--convenience::before {
+    background: no-repeat url("../../img/convenience.png");
+  }
+
+  &--cheerfulness::before {
+    background: no-repeat url("../../img/cheerfulness.png");
+  }
+
+  &--eco::before {
+    background: no-repeat url("../../img/eco.png");
+  }
+}
+
+.features__item-title {
+  font-size: 18px;
+  line-height: 32px;
+  color: @black;
+  margin: 0 0 4px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: @black;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.features__br-mob {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.features__br-tab {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}

@@ -1,0 +1,369 @@
+.filter {
+  margin-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.filter__form {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.filter__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 20px;
+    padding-right: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    padding: 5px 30px 0 0;
+    width: 318px;
+  }
+}
+
+.filter__price {
+  @media (min-width: @tablet-width) {
+    width: 223px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.filter__text {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: @black;
+  margin: 0 0 30px;
+  font-weight: 600;
+
+  &--label {
+    margin-bottom: 20px;
+  }
+}
+
+.filter__range-bar {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: @lightgrey;
+  margin-bottom: 32px;
+}
+
+.filter__range-strip {
+  display: block;
+  position: absolute;
+  height: 4px;
+  background-color: @primarylighter;
+}
+
+.filter__range-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid @primarylighter;
+  border-radius: 50%;
+  background-color: @white;
+  top: -10px;
+  cursor: pointer;
+
+  &--left {
+    left: 0;
+  }
+
+  &--right {
+    right: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    background-color: @primaryopacity;
+  }
+
+  &:focus::before {
+    background-color: @primaryopacity;
+  }
+
+  &:active::before {
+    background-color: @primary;
+  }
+}
+
+.filter__input-wrapper {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 25px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.filter__input-price {
+  box-sizing: border-box;
+  width: 125px;
+  height: 40px;
+
+  font-size: 16px;
+  line-height: 24px;
+  background-color: @white;
+  border-radius: 4px;
+  border: 2px solid @primarylighter;
+  color: @black;
+  padding: 8px 10px;
+  text-align: center;
+  appearance: none;
+
+  &:active {
+    border-color: @primarydarker;
+  }
+
+  &:focus {
+    border-color: @primarydarker;
+  }
+
+  &::placeholder {
+    color: @grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 96px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+  }
+}
+
+.filter__price-stroke {
+  display: block;
+  width: 10px;
+  height: 2px;
+  background-color: @grey;
+  margin: 0 10px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0 20px;
+  }
+}
+
+.filter__milk {
+  padding-bottom: 4px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: -10px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 10px;
+  }
+}
+
+.filter__milk-list,
+.filter__country-list {
+  list-style: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: @black;
+  margin: 0;
+  padding: 0 0 0 34px;
+}
+
+.filter__country-list {
+  padding: 0 0 0 52px;
+}
+
+.filter__milk-item,
+.filter__country-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.filter__mark-circle {
+  display: block;
+  position: absolute;
+  left: -34px;
+  width: 20px;
+  height: 20px;
+  background-color: @white;
+  border: 2px solid @grey;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.filter__input-milk:checked + .filter__mark-circle {
+  border-color: @primary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 2px;
+    background-color: @primary;
+    border-radius: 50px;
+  }
+}
+
+.filter__input-milk:hover + .filter__mark-circle {
+  border-color: @primarylighter;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 2px;
+    background-color: @primaryopacity;
+    border-radius: 50px;
+  }
+}
+
+.filter__input-milk:disabled ~ .filter__mark-circle {
+  opacity: 0.3;
+}
+
+.filter__input-milk:disabled ~ .filter__milk-label {
+  opacity: 0.3;
+}
+
+.filter__milk-label {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.filter__country {
+  padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.filter__mark-toogle {
+  display: block;
+  position: absolute;
+  left: -52px;
+  width: 42px;
+  height: 24px;
+  background-color: @grey;
+  border-radius: 20px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 2px;
+    background-color: @white;
+    border-radius: 50px;
+  }
+}
+
+.filter__input-country:checked + .filter__mark-toogle {
+  background-color: @primary;
+
+  &::before {
+    left: 20px;
+  }
+}
+
+.filter__input-country:hover + .filter__mark-toogle {
+  box-sizing: border-box;
+  background-color: @primaryopacity;
+  border: 2px solid @primarylighter;
+
+  &::before {
+    top: 0;
+    left: 0;
+  }
+}
+
+.filter__input-country:checked:hover + .filter__mark-toogle {
+  &::before {
+    top: 0;
+    left: 18px;
+  }
+}
+
+.filter__input-country:disabled + .filter__mark-toogle {
+  opacity: 0.3;
+
+  &::before {
+    background-color: @white;
+  }
+}
+
+.filter__input-country:disabled ~ .filter__country-label {
+  opacity: 0.3;
+}
+
+.filter__reset-button {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: @primary;
+  background-color: @white;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 8px 67px;
+  cursor: pointer;
+
+  &:hover {
+    color: @white;
+  }
+
+  &:focus {
+    color: @white;
+  }
+
+  &:active {
+    color: @white;
+  }
+
+  &:disabled {
+    color: @white;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 222px;
+    padding: 8px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 318px;
+    padding: 8px 30px;
+    margin: 0;
+  }
+}
