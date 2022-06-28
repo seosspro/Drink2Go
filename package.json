@@ -47,7 +47,6 @@
   },
   "type": "module",
   "dependencies": {
-    "leaflet": "^1.8.0",
     "swiper": "^8.2.5"
   }
 }

@@ -19,7 +19,7 @@
         <picture>
           <source media="(min-width:1440px)" srcset="./img/logo-desk.svg">
           <source media="(min-width:768px)" srcset="./img/logo-tablet.svg">
-          <img srcset="./img/logo-mob.svg" alt="logo">
+          <img src="./img/logo-mob.svg" srcset="./img/logo-mob.svg" alt="logo">
         </picture>
       </a>
       <nav class="header__main-nav main-nav">
@@ -79,7 +79,96 @@
   </header>
   <main>
     <h1 class="visually-hidden">Главная страница Drink2Go</h1>
-    <section class="promo">
+    <div class="swiper-container">
+      <div class="swiper wrapper">
+        <div class="swiper__wrapper">
+          <h2 class="visually-hidden">Новинки кофейных напитков</h2>
+          <div class="swiper-wrapper">
+            <div class="swiper__slide swiper__slide--decaf swiper-slide">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp"
+                  srcset="img/decafdesktop.webp, img/decafdesktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp"
+                  srcset="img/decaftablet.webp, img/decaftablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/decafmobile.webp, img/decafmobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/decafdesktop.png, img/decafdesktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/decaftablet.png, img/decaftablet@2x.png 2x">
+                <img class="swiper__image" src="img/decafmobile.png" srcset="img/decafmobile@2x.png 2x" width="280"
+                  height="280" alt="Декаф Флэт Уайт">
+              </picture>
+              <div class="swiper__info">
+                <span class="swiper__badge">Новинка!</span>
+                <h3 class="swiper__title">Декаф Флэт Уайт</h3>
+                <p class="swiper__description">Свежесваренный кофе без кофеина <br class="swiper__br-mob">
+                  из Эфиопии <br class="swiper__br">
+                  с
+                  натуральным <br class="swiper__br-mob"> фермерским молоком — то, что <br class="swiper__br-mob"> нужно
+                  <br class="swiper__br">
+                  для расслабления
+                  после <br class="swiper__br-mob"> тяжёлого рабочего
+                  дня
+                </p>
+                <div class="swiper__price-block">
+                  <p class="swiper__price"><span class="swiper__old-price strikethrough-text">295₽</span>225₽</p>
+                  <button class="swiper__price-button button" type="button">Заказать</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper__slide swiper__slide--latte swiper-slide">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp"
+                  srcset="img/lattedesktop.webp, img/lattedesktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp"
+                  srcset="img/lattetablet.webp, img/lattetablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/lattemobile.webp, img/lattemobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/lattedesktop.png, img/lattedesktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/lattetablet.png, img/lattetablet@2x.png 2x">
+                <img class="swiper__image" src="img/lattemobile.png" srcset="img/lattemobile@2x.png 2x" width="280"
+                  height="280" alt="Лавандовый Латте">
+              </picture>
+              <div class="swiper__info">
+                <span class="swiper__badge">Новинка!</span>
+                <h3 class="swiper__title">Лавандовый Латте</h3>
+                <p class="swiper__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и
+                  лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                <div class="swiper__price-block">
+                  <p class="swiper__price"><span class="swiper__old-price strikethrough-text">285₽</span>265₽</p>
+                  <button class="swiper__price-button button" type="button">Заказать</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper__slide swiper__slide--espresso swiper-slide">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp"
+                  srcset="img/espressodesktop.webp, img/espressodesktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp"
+                  srcset="img/espressotablet.webp, img/espressotablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/espressomobile.webp, img/espressomobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/espressodesktop.png, img/espressodesktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/espressotablet.png, img/espressotablet@2x.png 2x">
+                <img class="swiper__image" src="img/espressomobile.png" srcset="img/espressomobile@2x.png 2x"
+                  width="280" height="280" alt="Тройной Эспрессо">
+              </picture>
+              <div class="swiper__info">
+                <span class="swiper__badge">Новинка!</span>
+                <h3 class="swiper__title">Тройной Эспрессо</h3>
+                <p class="swiper__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо
+                  из
+                  Колумбии покажет вам, что такое настоящая бодрость</p>
+                <div class="swiper__price-block">
+                  <p class="swiper__price"><span class="swiper__old-price strikethrough-text">395₽</span>375₽</p>
+                  <button class="swiper__price-button button" type="button">Заказать</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper__pagination swiper-pagination"></div>
+          <div class="swiper__button swiper-button-prev"></div>
+          <div class="swiper__button swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+    <!-- <section class="promo">
       <div class="promo__wrapper wrapper">
         <div class="promo__swiper swiper">
           <div class="swiper__line">
@@ -180,36 +269,37 @@
         <button type="button" class="promo__button promo__button--prev"></button>
         <button type="button" class="promo__button promo__button--next"></button>
       </div>
-    </section>
-    <section class="features">
-      <div class="features__wrapper wrapper">
-        <div class="features__top">
-          <p class="features__badge">Преимущества</p>
-          <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
+    </section> -->
+    <section class="advantages">
+      <div class="advantages__wrapper wrapper">
+        <div class="advantages__top">
+          <p class="advantages__p">Преимущества</p>
+          <h2 class="advantages__title">Главные причины выбрать Drink2Go</h2>
         </div>
-        <ul class="features__list">
-          <li class="features__item features__item--speed">
-            <h3 class="features__item-title">Скорость</h3>
-            <p class="features__text">Готовый напиток всегда под <br class="features__br-tab"> рукой — <br
-                class="features__br-mob"> просто открой
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--speed">
+            <h3 class="advantages__item-title">Скорость</h3>
+            <p class="advantages__text">Готовый напиток всегда под <br class="advantages__br-tab"> рукой — <br
+                class="advantages__br-mob"> просто открой
               банку</p>
           </li>
-          <li class="features__item features__item--convenience">
-            <h3 class="features__item-title">Удобство</h3>
-            <p class="features__text">Легко помещается и в карман,<br class="features__br-mob"> <br
-                class="features__br-tab"> и в маленькую сумочку
+          <li class="advantages__item advantages__item--convenience">
+            <h3 class="advantages__item-title">Удобство</h3>
+            <p class="advantages__text">Легко помещается и в карман,<br class="advantages__br-mob"> <br
+                class="advantages__br-tab"> и в маленькую сумочку
             </p>
           </li>
-          <li class="features__item features__item--cheerfulness">
-            <h3 class="features__item-title">Бодрость</h3>
-            <p class="features__text">Сбалансированная доза <br class="features__br-tab"> кофеина <br
-                class="features__br-mob"> даст мощный заряд <br class="features__br-tab">
+          <li class="advantages__item advantages__item--cheerfulness">
+            <h3 class="advantages__item-title">Бодрость</h3>
+            <p class="advantages__text">Сбалансированная доза <br class="advantages__br-tab"> кофеина <br
+                class="advantages__br-mob"> даст мощный заряд <br class="advantages__br-tab">
               энергии</p>
           </li>
-          <li class="features__item features__item--eco">
-            <h3 class="features__item-title">Экологичность</h3>
-            <p class="features__text">Вся упаковка сделана<br class="features__br-mob"> <br class="features__br-tab"> из
-              перерабатываемых <br class="features__br-tab"> материалов
+          <li class="advantages__item advantages__item--eco">
+            <h3 class="advantages__item-title">Экологичность</h3>
+            <p class="advantages__text">Вся упаковка сделана<br class="advantages__br-mob"> <br
+                class="advantages__br-tab"> из
+              перерабатываемых <br class="advantages__br-tab"> материалов
             </p>
           </li>
         </ul>
@@ -218,7 +308,7 @@
     <section class="catalog">
       <div class="catalog__wrapper wrapper">
         <div class="catalog__top">
-          <p class="catalog__badge">Каталог</p>
+          <p class="advantages__p">Каталог</p>
           <h2 class="catalog__title">Каталог кофейных напитков</h2>
         </div>
         <div class="catalog__filter filter">
@@ -235,13 +325,11 @@
                 </span>
                 <div class="filter__input-wrapper">
                   <label>
-                    <span class="visually-hidden">Минимальная цена.</span>
                     <input class="filter__input-price filter__input-price--left" type="number" placeholder="0" min="0"
                       max="1000">
                   </label>
                   <span class="filter__price-stroke"></span>
                   <label>
-                    <span class="visually-hidden">Максимальная цена.</span>
                     <input class="filter__input-price filter__input-price--right" type="number" placeholder="900"
                       value="900" min="0" max="1000">
                   </label>
@@ -457,15 +545,86 @@
         </div>
       </div>
     </section>
-    <!-- <section class="map">
-      <h2 class="visually-hidden">Мы находимся здесь</h2>
-      <div class="map__wrapper">
-        <picture>
-          <source type="image/webp" srcset="img/map.webp">
-          <img class="map__image" src="img/map.png" width="320" height="420" alt="Карта">
-        </picture>
+    <section class="location">
+      <h2 class="visually-hidden">Карта</h2>
+      <div
+        class="location__map leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+        id="map" tabindex="0" style="position: relative;">
+        <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+          <div class="leaflet-pane leaflet-tile-pane">
+            <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+              <div class="leaflet-tile-container leaflet-zoom-animated"
+                style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation"
+                  src="https://a.tile.openstreetmap.org/18/153148/76172.png" class="leaflet-tile leaflet-tile-loaded"
+                  style="width: 256px; height: 256px; backface-visibility: hidden; transform: translate3d(95px, 90px, 0px); opacity: 1;"><img
+                  alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/153148/76171.png"
+                  class="leaflet-tile leaflet-tile-loaded"
+                  style="width: 256px; height: 256px; backface-visibility: hidden; transform: translate3d(95px, -166px, 0px); opacity: 1;"><img
+                  alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/153147/76172.png"
+                  class="leaflet-tile leaflet-tile-loaded"
+                  style="width: 256px; height: 256px; backface-visibility: hidden; transform: translate3d(-161px, 90px, 0px); opacity: 1;"><img
+                  alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/153149/76172.png"
+                  class="leaflet-tile leaflet-tile-loaded"
+                  style="width: 256px; height: 256px; backface-visibility: hidden; transform: translate3d(351px, 90px, 0px); opacity: 1;"><img
+                  alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/153148/76173.png"
+                  class="leaflet-tile leaflet-tile-loaded"
+                  style="width: 256px; height: 256px; backface-visibility: hidden; transform: translate3d(95px, 346px, 0px); opacity: 1;"><img
+                  alt="" role="presentation" src="https://b.tile.openstreetmap.org/18/153147/76171.png"
+                  class="leaflet-tile leaflet-tile-loaded"
+                  style="width: 256px; height: 256px; backface-visibility: hidden; transform: translate3d(-161px, -166px, 0px); opacity: 1;"><img
+                  alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/153149/76171.png"
+                  class="leaflet-tile leaflet-tile-loaded"
+                  style="width: 256px; height: 256px; backface-visibility: hidden; transform: translate3d(351px, -166px, 0px); opacity: 1;"><img
+                  alt="" role="presentation" src="https://a.tile.openstreetmap.org/18/153147/76173.png"
+                  class="leaflet-tile leaflet-tile-loaded"
+                  style="width: 256px; height: 256px; backface-visibility: hidden; transform: translate3d(-161px, 346px, 0px); opacity: 1;"><img
+                  alt="" role="presentation" src="https://c.tile.openstreetmap.org/18/153149/76173.png"
+                  class="leaflet-tile leaflet-tile-loaded"
+                  style="width: 256px; height: 256px; backface-visibility: hidden; transform: translate3d(351px, 346px, 0px); opacity: 1;">
+              </div>
+            </div>
+          </div>
+          <div class="leaflet-pane leaflet-shadow-pane"></div>
+          <div class="leaflet-pane leaflet-overlay-pane"></div>
+          <div class="leaflet-pane leaflet-marker-pane"><img src="./img/mappin.svg"
+              class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0"
+              style="margin-left: -19px; margin-top: -25px; width: 38px; height: 50px; transform: translate3d(236px, 210px, 0px); z-index: 210;">
+          </div>
+          <div class="leaflet-pane leaflet-tooltip-pane"></div>
+          <div class="leaflet-pane leaflet-popup-pane"></div>
+          <div class="leaflet-proxy leaflet-zoom-animated"
+            style="transform: translate3d(3.9206e+07px, 1.95002e+07px, 0px) scale(131072);"></div>
+        </div>
+        <div class="leaflet-control-container">
+          <div class="leaflet-top leaflet-left">
+            <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a
+                class="leaflet-control-zoom-in leaflet-disabled" href="#" title="Zoom in" role="button"
+                aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button"
+                aria-label="Zoom out">−</a></div>
+          </div>
+          <div class="leaflet-top leaflet-right">
+            <div class="leaflet-control-layers leaflet-control" aria-haspopup="true"><a
+                class="leaflet-control-layers-toggle" href="#" title="Layers"></a>
+              <section class="leaflet-control-layers-list">
+                <div class="leaflet-control-layers-base"><label>
+                    <input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers_29"
+                      checked="checked"><span> StreetView</span>
+                </div>
+                </label>
+                <div class="leaflet-control-layers-separator" style="display: none;"></div>
+                <div class="leaflet-control-layers-overlays"></div>
+              </section>
+            </div>
+          </div>
+          <div class="leaflet-bottom leaflet-left"></div>
+          <div class="leaflet-bottom leaflet-right">
+            <div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com"
+                title="A JS library for interactive maps">Leaflet</a> | © <a
+                href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</div>
+          </div>
+        </div>
       </div>
-    </section> -->
+    </section>
   </main>
   <footer class="footer container">
     <div class="footer__wrapper ">
@@ -570,10 +729,10 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
     integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
     crossorigin=""></script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 
 </html>
