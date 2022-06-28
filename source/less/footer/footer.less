@@ -277,3 +277,33 @@
   line-height: 16px;
   color: #bdbdbd;
 }
+
+.footer__br-mob {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.footer__br-tab {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.footer__br-desc {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
